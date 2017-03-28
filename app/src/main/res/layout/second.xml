@@ -2,40 +2,84 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="179dp"
-        android:text="lock 1 " />
+        android:layout_marginTop="200dp"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_lock1">
 
-    <Button
-        android:id="@+id/button 3 "
-        android:layout_width="wrap_content"
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock_open_black_24px"
+            android:padding="8dp"
+            android:id="@+id/iv_lock1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lock 1"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/sc_lock1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/button2"
-        android:layout_alignRight="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="48dp"
-        android:text="lock 2" />
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:layout_below="@id/ll_lock1">
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="Logout " />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock_open_black_24px"
+            android:padding="8dp"
+            android:id="@+id/iv_lock2"/>
 
-    <ExpandableListView
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@mipmap/ic_launcher"
-        android:scrollbars="horizontal"
-        android:visibility="visible" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lock 2"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:textSize="16sp"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/sc_lock2"/>
+
+    </LinearLayout>
+
+    <!--<ToggleButton-->
+        <!--android:id="@+id/toggleButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:text="Logout " />-->
+
+    <!--<ExpandableListView-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:background="@mipmap/ic_launcher"-->
+        <!--android:scrollbars="horizontal"-->
+        <!--android:visibility="visible" />-->
 </RelativeLayout>
